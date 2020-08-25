@@ -123,6 +123,14 @@ template post type: post
                 <h2><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></h2>
               </div>
 
+              <div class="thumbnail-image">
+                <?php the_post_thumbnail(); ?>
+              </div>
+
+               <div class="caption-text">
+                 <?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?>
+              </div>
+
               <div class="single-content">
                 <?php the_content(); ?>
               </div>
