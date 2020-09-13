@@ -49,38 +49,34 @@
 
           <div class="col-xs-8">
 
-            <div class="hamburger-menu">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#about-page">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work-page">work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#word-page">words</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">contact</a>
+              </li>
+            </ul>
 
-              <button class="navbar-toggler hidden-md-up btn-menu" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="btn-menu__bars"></i>
-              </button>
-
-              <div class="collapse navbar-toggleable-sm" id="navbarResponsive">
-                <ul class="nav navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about-page">about</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#work-page">work</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#word-page">words</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">contact</a>
-                  </li>
-                </ul>
-              </div>
-
+            <div id="sidebarCollapse">
+              <i class="fas fa-align-right"></i>
             </div>
 
-          </div>
+          </div> <!-- .col-xs-8 -->
 
-        </div>
-      </div>
+        </div> <!-- .row -->
+      </div> <!-- .navbar-inner -->
     </nav>
 
-  </div>
+  </div> <!-- .pos-f-t -->
+
+  <?php get_template_part('sidebar'); ?>
 
 </header>
 

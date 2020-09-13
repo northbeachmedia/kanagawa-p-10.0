@@ -11,11 +11,6 @@ $('.pre-loader').imagesLoaded( function() {
   $("#loader-wrapper").fadeOut().hide(1000);
 });
 
-// toggle animation in hamburger menu
-$('.btn-menu').on('click', function() {
-    $('body').toggleClass('menu-open');
-});
-
 // instantiating clipboard.js
  var clipboard = new ClipboardJS('.clipboard');
  clipboard.on('success', function(e) {
@@ -29,4 +24,23 @@ $('.btn-menu').on('click', function() {
 $('.grid').masonry({
   // options
   itemSelector: '.grid-item',
+});
+
+// custom content scroller
+$(document).ready(function () {
+  $("#sidebar").mCustomScrollbar({
+      theme: "minimal"
+  });
+
+  $('#dismiss, .overlay').on('click', function () {
+      $('#sidebar').removeClass('active');
+      $('.overlay').removeClass('active');
+  });
+
+  $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').addClass('active');
+      $('.overlay').addClass('active');
+      $('.collapse.in').toggleClass('in');
+      $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+  });
 });

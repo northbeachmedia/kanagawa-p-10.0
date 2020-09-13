@@ -16,21 +16,25 @@ add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
 // javascript
 function theme_js() {
-	wp_enqueue_script( 'jquery_scripts', get_template_directory_uri() . '/js/jquery.min.js', array(), '', true );
+	wp_enqueue_script( 'jquery_scripts', get_template_directory_uri() . '/js/jquery.min.js', array(), date("h:i:s"), true );
+	// jquery ui
+	wp_enqueue_script( 'jquery_scripts_ui', get_template_directory_uri() . '/js/jquery.ui.min.js', array(), date("h:i:s"), true );
 	// bootstrap
-	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap/bootstrap.main.min.js', array(), '', true );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap/bootstrap.main.min.js', array(), date("h:i:s"), true );
 	// smooth scroll
-	wp_enqueue_script( 'smooth_scroll', get_template_directory_uri() . '/js/smooth-scroll.js', array(), '', true );
+	wp_enqueue_script( 'smooth_scroll', get_template_directory_uri() . '/js/smooth-scroll.js', array(), date("h:i:s"), true );
 	// jquery imagesloaded
-	wp_enqueue_script( 'imagesloaded', get_template_directory_uri() . '/js/imagesloaded.pkgd.min.js', array(), '', true );
+	wp_enqueue_script( 'imagesloaded', get_template_directory_uri() . '/js/imagesloaded.pkgd.min.js', array(), date("h:i:s"), true );
 	// jquery clipboard
-	wp_enqueue_script( 'clipboard', get_template_directory_uri() . '/js/clipboard.min.js', array(), '', true );
+	wp_enqueue_script( 'clipboard', get_template_directory_uri() . '/js/clipboard.min.js', array(), date("h:i:s"), true );
 	// popper
-	wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.min.js', array(), '', true );
+	wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.min.js', array(), date("h:i:s"), true );
+	// jquery malihu custom scrollbar (for collapsible sidebar)
+	wp_enqueue_script( 'jquery_malihu_custom_scrollbar', get_template_directory_uri() . '/js/jquery.mcustomscrollbar.min.js', array(), date("h:i:s"), true );
 	// masonry
-	wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/masonry.pkgd.min.js', array(), '', true );
+	wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/masonry.pkgd.min.js', array(), date("h:i:s"), true );
 	// my javascript
-	wp_enqueue_script( 'my_javascript', get_template_directory_uri() . '/js/my.javascript.js', array(), '', true );
+	wp_enqueue_script( 'my_javascript', get_template_directory_uri() . '/js/my.javascript.js', array(), date("h:i:s"), true );
 }
 add_action( 'wp_enqueue_scripts', 'theme_js' );
 
