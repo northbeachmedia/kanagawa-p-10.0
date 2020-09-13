@@ -7,7 +7,6 @@
   <div class="home-page-top">
     <div class="row no-gutters">
       <div class="col-xs-12">
-        <h1>northbeach.media</h1>
         <h2>Making the Internet more beautiful and simple one line of code at a time.</h2>
         <p>Technical & Performance Marketer, Web Developer, etc.</p>
       </div>

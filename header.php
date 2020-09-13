@@ -43,7 +43,7 @@
 
           <div class="col-xs-4">
             <a href="#home-page">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" />
+              <h1>northbeach.media</h1>
             </a>
           </div>
 
