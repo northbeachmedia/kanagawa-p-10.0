@@ -42,7 +42,10 @@
 
                 <ul class="nav navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="<?php echo get_option('home'); ?>/instagram">insta</a>
+                    <a class="nav-link" href="https://open.spotify.com/user/v947bxvsytdi3v5510lhcqtqa">spotify</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="<?php echo get_option('home'); ?>/instagram">instagram</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="<?php echo get_option('home'); ?>/privacy-policy">privacy policy</a>
