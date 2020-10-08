@@ -36,7 +36,7 @@
         </a>
       </div>
 
-      <div class="col-lg-4">
+      <div class="col-lg-6">
         <img src="<?php echo get_template_directory_uri(); ?>/images/profile.png" />
       </div>
     </div>
