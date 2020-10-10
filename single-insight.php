@@ -50,11 +50,11 @@ template post type: post
 
    <?php } //end is_single(); ?>
 
+   <?php get_template_part('related-posts-insight'); ?>
+
   </div> <!-- single-page-top -->
 
   <div class="single-page-bottom">
-
-    <?php get_template_part('related-posts-insight'); ?>
 
   </div> <!-- single-page-bottom -->
 
