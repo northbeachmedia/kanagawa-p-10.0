@@ -113,7 +113,7 @@
 
       <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
 
-        <?php $args = array('posts_per_page' => 3); $query = new WP_Query($args); ?>
+        <?php $args = array('posts_per_page' => 6); $query = new WP_Query($args); ?>
 
         <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
