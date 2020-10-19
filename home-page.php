@@ -84,6 +84,16 @@
         </a>
       </div>
 
+      <div class="col-md-6">
+        <a href="https://www.figma.com/file/vvOtGpR5aJk4lSkzYSCZx9/Prototype?node-id=0%3A1" target="_blank">Solis</a>
+        <p>A high-fidelity prototype of a web application providing real-time stress measurement.</p>
+        <a href="https://www.figma.com/file/vvOtGpR5aJk4lSkzYSCZx9/Prototype?node-id=0%3A1" target="_blank">
+          <button>
+            <div class="button-visit-site">visit site</div>
+          </button>
+        </a>
+      </div>
+
     </div>
 
   </div> <!-- work-page-top -->
