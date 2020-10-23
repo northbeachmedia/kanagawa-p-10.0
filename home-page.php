@@ -160,7 +160,7 @@
             <?php
               $args = array(
                 'posts_per_page' => 4,
-                'category_name' => 'journal',
+                'category_name' => 'insight',
               );
                 $query = new WP_Query($args);
             ?>
