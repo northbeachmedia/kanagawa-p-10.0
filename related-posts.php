@@ -4,7 +4,7 @@
 
   <div class="related-posts-loop">
 
-    <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
+    <div class="grid-related-posts" data-masonry='{ "itemSelector": ".grid-item" }'>
 
       <?php
         // default arguments
@@ -63,7 +63,7 @@
         <!-- end loop and reset post data -->
         <?php endforeach; wp_reset_postdata(); ?>
 
-    </div> <!-- grid -->
+    </div> <!-- grid-related-posts -->
 
   </div> <!-- related-posts-loop -->
 

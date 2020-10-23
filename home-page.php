@@ -121,61 +121,72 @@
 
     <div class="content-loop">
 
-      <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
 
-        <?php $args = array('posts_per_page' => 6); $query = new WP_Query($args); ?>
+            <?php
+              $args = array(
+                'posts_per_page' => 4,
+                'category_name' => 'journal',
+              );
+                $query = new WP_Query($args);
+            ?>
 
-        <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+            <?php if ( $query->have_posts() ) : while ( $query-> have_posts() ) : $query-> the_post(); ?>
 
-          <?php if (in_category( 'journal' )) : ?>
-
-            <div class="grid-item">
-              <a href="<?php the_permalink(); ?>">
-                <div class="journal-category">
-                  <div class="card">
-                    <div class="card-image">
-                      <?php the_post_thumbnail(); ?>
-                    </div>
-                    <div class="card-body">
-                      <p class="title"><?php the_title(); ?></p>
-                      <p class="date"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></p>
-                      <p><?php the_excerpt(); ?></p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-          <?php else : ?>
-
-            <div class="grid-item">
-              <a href="<?php the_permalink(); ?>">
-                <div class="insight-category">
-                  <div class="card">
-                    <div class="insight-label">
-                      <p>Insight</p>
-                    </div>
-                    <div class="card-body">
-                      <p class="title"><?php the_title(); ?></p>
-                      <p class="date"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></p>
-                      <p><?php the_excerpt(); ?></p>
+              <div class="grid-item">
+                <a href="<?php the_permalink(); ?>">
+                  <div class="journal-category">
+                    <div class="card">
+                      <div class="card-image">
+                        <?php the_post_thumbnail(); ?>
+                      </div>
+                      <div class="card-body">
+                        <p class="title"><?php the_title(); ?></p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </div>
+                </a>
+              </div>
 
-            <?php endif; ?>
+            <?php endwhile; wp_reset_postdata(); endif; ?>
 
-        <?php endwhile; wp_reset_postdata(); else : ?>
-
-        <div class="col-xs-12">
-          <p>Sorry. At the moment there's no posts to display.</p>
+          </div> <!-- grid -->
         </div>
+        <div class="col-md-6">
+          <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
 
-        <?php endif; ?>
+            <?php
+              $args = array(
+                'posts_per_page' => 4,
+                'category_name' => 'journal',
+              );
+                $query = new WP_Query($args);
+            ?>
 
-      </div> <!-- grid -->
+            <?php if ( $query->have_posts() ) : while ( $query-> have_posts() ) : $query-> the_post(); ?>
+
+              <div class="grid-item">
+                <a href="<?php the_permalink(); ?>">
+                  <div class="insight-category">
+                    <div class="card">
+                      <div class="insight-label">
+                        <p>Insight</p>
+                      </div>
+                      <div class="card-body">
+                        <p class="title"><?php the_title(); ?></p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            <?php endwhile; wp_reset_postdata(); endif; ?>
+
+          </div> <!-- grid -->
+        </div>
+      </div>
 
     </div> <!-- content-loop -->
 
