@@ -54,10 +54,10 @@
                 <a class="nav-link" href="#about-page">about</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#work-page">work</a>
+                <a class="nav-link" href="#word-page">words</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#word-page">words</a>
+                <a class="nav-link" href="#work-page">work</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">contact</a>

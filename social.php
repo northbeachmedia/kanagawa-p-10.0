@@ -15,7 +15,7 @@
         <i class="fab fa-facebook-f"></i>
       </a>
 
-      <div data-clipboard-text="<?php the_permalink(); ?>" class="clipboard" data-toggle="tooltip" title="Copy to clipboard">
+      <div data-clipboard-text="<?php the_permalink(); ?>" class="clipboard" data-toggle="tooltip" title="copy link">
         <i class="fas fa-share"></i>
       </div>
 

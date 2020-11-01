@@ -8,7 +8,6 @@
 
       <div class="col-xs-12">
         <h2>Words and insights</h2>
-        <hr />
         <p>Writing is an essential step in collecting and analyzing strategies and ideas. I write short-form insights on today's web design and marketing topics.</p>
       </div>
 

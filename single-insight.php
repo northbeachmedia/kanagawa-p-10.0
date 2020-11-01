@@ -25,10 +25,6 @@ template post type: post
 
               <h1><?php the_title(); ?></h1>
 
-              <div class="single-hr">
-                <hr />
-              </div>
-
               <div class="single-content">
                 <?php the_content(); ?>
               </div>

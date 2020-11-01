@@ -11,19 +11,16 @@
            <div class="row no-gutters">
              <div class="col-xs-12">
 
-               <h1><?php the_title(); ?></h1>
-
-               <div class="single-hr">
-                 <hr />
+               <div class="date">
+                 <i class="fas fa-clock"></i>
+                 <p><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></p>
                </div>
+               
+               <h1><?php the_title(); ?></h1>
 
                <div class="excerpt">
                  <?php the_excerpt(); ?>
                </div>
-
-              <div class="time-stamp">
-                <h2><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></h2>
-              </div>
 
               <div class="thumbnail-image">
                 <?php the_post_thumbnail(); ?>
