@@ -59,72 +59,64 @@
 
     <div class="content-loop">
 
-      <div class="row">
-        <div class="col-md-6">
-          <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
+      <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
 
-            <?php
-              $args = array(
-                'posts_per_page' => 4,
-                'category_name' => 'journal',
-              );
-                $query = new WP_Query($args);
-            ?>
+        <?php
+          // default arguments
+          $args = array(
+            'posts_per_page' => 6,
+          );
 
-            <?php if ( $query->have_posts() ) : while ( $query-> have_posts() ) : $query-> the_post(); ?>
+          // query posts
+          $wpex_query = new wp_query( $args );
 
-              <div class="grid-item">
-                <a href="<?php the_permalink(); ?>">
-                  <div class="journal-category">
-                    <div class="card">
-                      <div class="card-image">
-                        <?php the_post_thumbnail(); ?>
-                      </div>
-                      <div class="card-body">
-                        <p class="title"><?php the_title(); ?></p>
-                      </div>
-                    </div>
+          // loop through posts
+          foreach( $wpex_query->posts as $post ) : setup_postdata( $post ); ?>
+
+        <?php if (in_category( 'journal' )) : ?>
+
+          <div class="grid-item">
+            <a href="<?php the_permalink(); ?>">
+              <div class="journal-category">
+                <div class="card">
+                  <div class="card-image">
+                    <?php the_post_thumbnail(); ?>
                   </div>
-                </a>
-              </div>
-
-            <?php endwhile; wp_reset_postdata(); endif; ?>
-
-          </div> <!-- grid -->
-        </div>
-        <div class="col-md-6">
-          <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
-
-            <?php
-              $args = array(
-                'posts_per_page' => 4,
-                'category_name' => 'insight',
-              );
-                $query = new WP_Query($args);
-            ?>
-
-            <?php if ( $query->have_posts() ) : while ( $query-> have_posts() ) : $query-> the_post(); ?>
-
-              <div class="grid-item">
-                <a href="<?php the_permalink(); ?>">
-                  <div class="insight-category">
-                    <div class="card">
-                      <div class="insight-label">
-                        <p>Insight</p>
-                      </div>
-                      <div class="card-body">
-                        <p class="title"><?php the_title(); ?></p>
-                      </div>
-                    </div>
+                  <div class="card-body">
+                    <p class="title"><?php the_title(); ?></p>
+                    <p class="date"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></p>
+                    <p><?php the_excerpt(); ?></p>
                   </div>
-                </a>
+                </div>
               </div>
+            </a>
+          </div>
 
-            <?php endwhile; wp_reset_postdata(); endif; ?>
+        <?php else : ?>
 
-          </div> <!-- grid -->
-        </div>
-      </div>
+          <div class="grid-item">
+            <a href="<?php the_permalink(); ?>">
+              <div class="insight-category">
+                <div class="card">
+                  <div class="insight-label">
+                    <p>Insight</p>
+                  </div>
+                  <div class="card-body">
+                    <p class="title"><?php the_title(); ?></p>
+                    <p class="date"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></p>
+                    <p><?php the_excerpt(); ?></p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        <?php endif; ?>
+
+        <!-- end loop and reset post data -->
+        <?php endforeach; wp_reset_postdata(); ?>
+
+      </div> <!-- grid -->
 
     </div> <!-- content-loop -->
 

@@ -4,25 +4,21 @@
 
     <div id="contact"></div>
 
-    <div class="footer-box">
+    <div class="footer-form">
 
-      <div class="footer-form">
+      <div class="footer-title">
+        <h2>Let's get in touch</h2>
+        <p>Want to talk marketing? Or just have a coffee? I'm excited to chat with you.</p>
+      </div>
 
-        <div class="footer-title">
-          <h2>Let's get in touch</h2>
-          <p>Want to talk marketing? Or just have a coffee? I'm excited to chat with you.</p>
-        </div>
+      <?php
+        if( function_exists('ninja_forms_display_form') ) {
+          ninja_forms_display_form(2);
+        }
+      ?>
 
-        <?php
-          if( function_exists('ninja_forms_display_form') ) {
-            ninja_forms_display_form(2);
-          }
-        ?>
-
-        <div class="footer-social">
-          <p>If forms aren't your thing, connect through <a target="_blank" href="https://www.linkedin.com/in/degrootcanada/">LinkedIn</a>.</p>
-        </div>
-
+      <div class="footer-social">
+        <p>If forms aren't your thing, connect through <a target="_blank" href="https://www.linkedin.com/in/degrootcanada/">LinkedIn</a>.</p>
       </div>
 
     </div>
@@ -47,10 +43,10 @@
                     <a class="nav-link" href="<?php echo get_option('home'); ?>/instagram">insta</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="<?php echo get_option('home'); ?>/privacy-policy">privacy policy</a>
+                    <a class="nav-link" href="<?php echo get_option('home'); ?>/privacy-policy">privacy</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="<?php echo get_option('home'); ?>/terms">terms</a> 
+                    <a class="nav-link" href="<?php echo get_option('home'); ?>/terms">terms</a>
                   </li>
                 </ul>
 
