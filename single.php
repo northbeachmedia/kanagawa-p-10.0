@@ -15,7 +15,7 @@
                  <i class="fas fa-clock"></i>
                  <p><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></p>
                </div>
-               
+
                <h1><?php the_title(); ?></h1>
 
                <div class="excerpt">
@@ -86,10 +86,10 @@
                     <a class="nav-link" href="https://open.spotify.com/user/v947bxvsytdi3v5510lhcqtqa">spotify</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="<?php echo get_option('home'); ?>/instagram">instagram</a>
+                    <a class="nav-link" href="<?php echo get_option('home'); ?>/instagram">insta/a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="<?php echo get_option('home'); ?>/privacy-policy">privacy policy</a>
+                    <a class="nav-link" href="<?php echo get_option('home'); ?>/privacy-policy">privacy</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="<?php echo get_option('home'); ?>/terms">terms</a>
