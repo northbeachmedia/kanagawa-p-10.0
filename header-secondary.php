@@ -12,7 +12,7 @@
 
     <title><?php wp_title( '·', true, 'right' ); ?><?php bloginfo( 'name' ); ?></title>
 
-<?php wp_head(); ?>
+<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); wp_head(); ?>
 
     <!-- google webmasters verification -->
     <meta name="google-site-verification" content="KiWj3oivtduOwITXsb1G_TAg-QG3zHvfeqH--wWXRHg" />
