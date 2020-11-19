@@ -1,10 +1,3 @@
-<?php
-/*
-template name: insight
-template post type: post
-*/
-?>
-
 <?php get_template_part('header-secondary'); ?>
 
 <div class="single-page-insight">
@@ -29,6 +22,8 @@ template post type: post
                 <?php the_content(); ?>
               </div>
 
+              <?php the_field('content'); ?>
+
               <div class="tags">
                 <ul>
                   <?php the_tags( '<li>', '</li><li>', '</li>' ); ?>
@@ -36,6 +31,11 @@ template post type: post
               </div>
 
               <?php get_template_part('social'); ?>
+
+              <div class="comment-section">
+                <h3>Leave a response</h3>
+                <?php comments_template(); ?>
+             </div>
 
             </div>
           </div>
@@ -46,11 +46,14 @@ template post type: post
 
    <?php } //end is_single(); ?>
 
-   <?php get_template_part('related-posts-insight'); ?>
+   <!-- deprecated and replaced by related-posts template -->
+   <?php /* get_template_part('related-posts-insights'); */ ?>
 
   </div> <!-- single-page-top -->
 
   <div class="single-page-bottom">
+
+    <?php get_template_part('related-posts'); ?>
 
   </div> <!-- single-page-bottom -->
 

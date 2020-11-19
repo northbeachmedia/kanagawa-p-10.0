@@ -64,7 +64,7 @@
         <?php
           // default arguments
           $args = array(
-            'posts_per_page' => 6,
+            'posts_per_page' => 3,
           );
 
           // query posts
