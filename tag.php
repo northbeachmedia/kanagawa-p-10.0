@@ -4,6 +4,10 @@
 
   <div class="posts-page-top">
 
+    <div class="tag-category">
+      <h2><?php single_tag_title(); ?></h2>
+    </div>
+
     <div class="content-loop">
 
         <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
