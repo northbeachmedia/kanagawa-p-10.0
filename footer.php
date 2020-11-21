@@ -30,10 +30,22 @@
     <div class="footer-navigation-outer">
       <div class="footer-navigation-inner">
 
-        <nav class="navbar navbar-light">
-          <div class="navbar-inner">
-            <div class="row">
-              <div class="col-xs-12">
+        <div class="row">
+
+          <div class="col-xs-2">
+
+            <div class="home-icon">
+              <a href="<?php echo get_option('home'); ?>">
+                <i class="fas fa-home"></i>
+              </a>
+            </div>
+
+          </div> <!-- col-xs-2 -->
+
+          <div class="col-xs-10">
+
+            <nav class="navbar navbar-light">
+              <div class="navbar-inner">
 
                 <ul class="nav navbar-nav">
                   <li class="nav-item">
@@ -51,12 +63,14 @@
                 </ul>
 
               </div>
-            </div>
-          </div>
-        </nav>
+            </nav>
 
-      </div>
-    </div>
+          </div> <!-- col-xs-10 -->
+
+        </div> <!-- row -->
+
+      </div> <!-- footer-navigation-inner -->
+    </div> <!-- footer-navigation-outer -->
 
   </div> <!-- footer-bottom -->
 

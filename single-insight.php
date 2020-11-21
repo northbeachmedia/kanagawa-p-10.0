@@ -2,6 +2,10 @@
 
 <div class="single-page-insight">
 
+  <div class="single-sidebar">
+
+  </div>
+
   <div class="single-page-top">
 
     <?php if( is_single() ) { ?>
@@ -47,7 +51,7 @@
    <?php } //end is_single(); ?>
 
    <!-- deprecated and replaced by related-posts template -->
-   <?php /* get_template_part('related-posts-insights'); */ ?>
+   <?php /* get_template_part('related-posts-insight'); */ ?>
 
   </div> <!-- single-page-top -->
 
