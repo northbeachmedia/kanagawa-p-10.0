@@ -178,6 +178,16 @@
         </a>
       </div>
 
+      <div class="col-md-6">
+        <h3>CSS parallax demo</h3>
+        <p>A one page scoller sharing a pure CSS parallax scrolling effect.</p>
+        <a href="https://northbeachmedia.github.io/parallax-demo/" target="_blank">
+          <button>
+            <div class="button-visit-site">visit site</div>
+          </button>
+        </a>
+      </div>
+
     </div>
 
   </div> <!-- work-page-top -->
