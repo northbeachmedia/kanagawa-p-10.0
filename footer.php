@@ -35,7 +35,7 @@
           <div class="col-xs-2">
 
             <div class="home-icon">
-              <a href="<?php echo get_option('home'); ?>">
+              <a href="#home-page">
                 <i class="fas fa-home"></i>
               </a>
             </div>
