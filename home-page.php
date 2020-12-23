@@ -149,26 +149,6 @@
     <div class="row row-column">
 
       <div class="col-md-6">
-        <h3>thecrewishere.com</h3>
-        <p>The most interesting and unique video content from around the Internet.</p>
-        <a href="https://thecrewishere.com/" target="_blank">
-          <button>
-            <div class="button-visit-site">visit site</div>
-          </button>
-        </a>
-      </div>
-
-      <div class="col-md-6">
-        <h3>sitesyoushouldknow.com</h3>
-        <p>A tribute and collection of all that's great on the Internet.</p>
-        <a href="https://sitesyoushouldknow.com/" target="_blank">
-          <button>
-            <div class="button-visit-site">visit site</div>
-          </button>
-        </a>
-      </div>
-
-      <div class="col-md-6">
         <h3>Solis</h3>
         <p>A high-fidelity prototype of a web application providing real-time stress measurement.</p>
         <a href="https://www.figma.com/file/vvOtGpR5aJk4lSkzYSCZx9/Prototype?node-id=0%3A1" target="_blank">
