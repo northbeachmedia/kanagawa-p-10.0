@@ -27,11 +27,11 @@
 
                 <ul class="nav navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="https://open.spotify.com/user/v947bxvsytdi3v5510lhcqtqa">spotify</a>
+                    <a class="nav-link" target="_blank" href="https://open.spotify.com/user/v947bxvsytdi3v5510lhcqtqa">spotify</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="<?php echo get_option('home'); ?>/instagram">insta</a>
-                  </li>
+                    <a class="nav-link" target="_blank" href="https://www.instagram.com/degrootcanada/">insta</a>
+                 </li>
                   <li class="nav-item">
                     <a class="nav-link" href="<?php echo get_option('home'); ?>/privacy-policy">privacy</a>
                   </li>
