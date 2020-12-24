@@ -13,61 +13,57 @@
 
     </div> <!-- row -->
 
-    <div class="content-loop">
+    <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
 
-      <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
+      <?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>
 
-        <?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>
+        <?php if (in_category( 'journal' )) : ?>
 
-          <?php if (in_category( 'journal' )) : ?>
-
-            <div class="grid-item">
-              <a href="<?php the_permalink(); ?>">
-                <div class="journal-category">
-                  <div class="card">
-                    <div class="card-image">
-                      <?php the_post_thumbnail(); ?>
-                    </div>
-                    <div class="card-body">
-                      <p class="title"><?php the_title(); ?></p>
-                      <p class="date"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></p>
-                      <p><?php the_excerpt(); ?></p>
-                    </div>
+          <div class="grid-item">
+            <a href="<?php the_permalink(); ?>">
+              <div class="journal-category">
+                <div class="card">
+                  <div class="card-image">
+                    <?php the_post_thumbnail(); ?>
+                  </div>
+                  <div class="card-body">
+                    <p class="title"><?php the_title(); ?></p>
+                    <p class="date"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></p>
+                    <p><?php the_excerpt(); ?></p>
                   </div>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+          </div>
 
-          <?php else : ?>
+        <?php else : ?>
 
-            <div class="grid-item">
-              <a href="<?php the_permalink(); ?>">
-                <div class="insight-category">
-                  <div class="card">
-                    <div class="insight-label">
-                      <p>Insight</p>
-                    </div>
-                    <div class="card-body">
-                      <p class="title"><?php the_title(); ?></p>
-                      <p class="date"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></p>
-                      <p><?php the_excerpt(); ?></p>
-                    </div>
+          <div class="grid-item">
+            <a href="<?php the_permalink(); ?>">
+              <div class="insight-category">
+                <div class="card">
+                  <div class="insight-label">
+                    <p>Insight</p>
+                  </div>
+                  <div class="card-body">
+                    <p class="title"><?php the_title(); ?></p>
+                    <p class="date"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></p>
+                    <p><?php the_excerpt(); ?></p>
                   </div>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+          </div>
 
-            <?php endif; ?>
+          <?php endif; ?>
 
-        <?php endwhile; else: ?>
+      <?php endwhile; else: ?>
 
-        <?php endif; ?>
+      <?php endif; ?>
 
-      </div> <!-- grid -->
+    </div> <!-- grid -->
 
-      <?php next_posts_link( '<div class="button-see-more">See more</div>' ); ?>
-
-    </div> <!-- .content-loop -->
+    <?php next_posts_link( '<div class="button-see-more">See more</div>' ); ?>
 
   </div> <!-- posts-page-top -->
 
