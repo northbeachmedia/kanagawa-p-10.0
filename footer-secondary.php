@@ -1,54 +1,37 @@
 <footer>
 
-  <div class="footer-top">
-  </div>
-
   <div class="footer-bottom">
 
-    <div class="footer-navigation-outer">
-      <div class="footer-navigation-inner">
+    <div class="footer-navigation">
 
-        <div class="row">
+      <div class="flex-container">
+        <div class="flex-item-1">
+          <h4>Making the Internet simple and beautiful one line of code at a time</h4>
+        </div>
+        <div class="flex-item-2">
+          <ul>
+            <li><a href="<?php echo get_option('home'); ?>/#home-page">home</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/#about-page">about</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/#words-page">words</a></li>
+          </ul>
+        </div>
+        <div class="flex-item-3">
+          <ul>
+            <li><a href="<?php echo get_option('home'); ?>/#work-page">work</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/#contact">contact</a></li>
+            <li><a target="_blank" href="https://open.spotify.com/user/v947bxvsytdi3v5510lhcqtqa">spotify</a></li>
+          </ul>
+        </div>
+        <div class="flex-item-4">
+          <ul>
+            <li><a target="_blank" href="https://www.instagram.com/degrootcanada/">instagram</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/privacy-policy">privacy</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/terms">terms</a></li>
+          </ul>
+        </div>
+      </div>
 
-          <div class="col-xs-2">
-
-            <div class="home-icon">
-              <a href="<?php echo get_option('home'); ?>">
-                <i class="fas fa-home"></i>
-              </a>
-            </div>
-
-          </div> <!-- col-xs-2 -->
-
-          <div class="col-xs-10">
-
-            <nav class="navbar navbar-light">
-              <div class="navbar-inner">
-
-                <ul class="nav navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="https://open.spotify.com/user/v947bxvsytdi3v5510lhcqtqa">spotify</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="https://www.instagram.com/degrootcanada/">insta</a>
-                 </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="<?php echo get_option('home'); ?>/privacy-policy">privacy</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="<?php echo get_option('home'); ?>/terms">terms</a>
-                  </li>
-                </ul>
-
-              </div>
-            </nav>
-
-          </div> <!-- col-xs-10 -->
-
-        </div> <!-- row -->
-
-      </div> <!-- footer-navigation-inner -->
-    </div> <!-- footer-navigation-outer -->
+    </div> <!-- .footer-navigation -->
 
   </div> <!-- footer-bottom -->
 

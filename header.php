@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-oi8o31xSQq8S0RpBcb4FaLB8LJi9AT8oIdmS1QldR8Ui7KUQjNAnDlJjp55Ba8FG" crossorigin="anonymous">
@@ -44,46 +44,7 @@
 
   <div id="home-page"></div>
 
-  <div class="pos-f-t">
-
-    <nav class="navbar navbar-light">
-      <div class="navbar-inner">
-        <div class="row">
-
-          <div class="col-xs-4">
-            <a href="#home-page">
-              <h1>northbeach.media</h1>
-            </a>
-          </div>
-
-          <div class="col-xs-8">
-
-            <ul class="nav navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#about-page">about</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#word-page">words</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#work-page">work</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">contact</a>
-              </li>
-            </ul>
-
-            <div id="sidebarCollapse">
-              <i class="fas fa-align-right"></i>
-            </div>
-
-          </div> <!-- .col-xs-8 -->
-
-        </div> <!-- .row -->
-      </div> <!-- .navbar-inner -->
-    </nav>
-
-  </div> <!-- .pos-f-t -->
+  <?php get_template_part('navigation'); ?>
 
   <?php get_template_part('sidebar'); ?>
 

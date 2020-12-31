@@ -42,11 +42,11 @@
 
 </div> <!-- about-page -->
 
-<div id="word-page"></div>
+<div id="words-page"></div>
 
-<div class="word-page">
+<div class="words-page">
 
-  <div class="word-page-top">
+  <div class="words-page-top">
 
     <div class="row">
 
@@ -124,7 +124,7 @@
 
   </div>
 
-  <div class="word-page-bottom">
+  <div class="words-page-bottom">
   </div>
 
 </div> <!-- word-page -->

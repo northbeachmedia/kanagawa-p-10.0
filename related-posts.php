@@ -63,8 +63,8 @@
         <!-- end loop and reset post data -->
         <?php endforeach; wp_reset_postdata(); ?>
 
-    </div> <!-- grid-related-posts -->
+    </div> <!-- .grid-related-posts -->
 
-  </div> <!-- related-posts-loop -->
+  </div> <!-- .related-posts-loop -->
 
-</div> <!-- related-posts-section -->
+</div> <!-- .related-posts-section -->

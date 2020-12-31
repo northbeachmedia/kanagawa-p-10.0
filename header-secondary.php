@@ -63,7 +63,7 @@
                 <a class="nav-link" href="<?php echo get_option('home'); ?>/#about-page">about</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo get_option('home'); ?>/#word-page">words</a>
+                <a class="nav-link" href="<?php echo get_option('home'); ?>/#words-page">words</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo get_option('home'); ?>/#work-page">work</a>
