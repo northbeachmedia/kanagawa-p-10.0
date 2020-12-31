@@ -17,7 +17,7 @@
       </li>
 
       <li class="list-group-item">
-        <a class="nav-link" href="#word-page">words</a>
+        <a class="nav-link" href="#words-page">words</a>
       </li>
 
       <li class="list-group-item">

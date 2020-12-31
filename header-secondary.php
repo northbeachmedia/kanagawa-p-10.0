@@ -85,7 +85,7 @@
 
   </div> <!-- .pos-f-t -->
 
-  <?php get_template_part('sidebar'); ?>
+  <?php get_template_part('sidebar-secondary'); ?>
 
 </header>
 
