@@ -30,28 +30,36 @@
     <div class="footer-navigation">
 
       <div class="flex-container">
+
         <div class="flex-item-1">
-          <ul>
-            <li><a href="#home-page">home</a></li>
-            <li><a href="#about-page">about</a></li>
-            <li><a href="#words-page">words</a></li>
-          </ul>
-        </div>
+          <div class="home-icon">
+            <a href="#home-page"><i class="fas fa-home"></i></a>
+          </div>
+        </div> <!-- .flex-item-1 -->
+
         <div class="flex-item-2">
-          <ul>
-            <li><a href="#work-page">work</a></li>
-            <li><a href="#contact">contact</a></li>
-            <li><a target="_blank" href="https://open.spotify.com/user/v947bxvsytdi3v5510lhcqtqa">spotify</a></li>
-          </ul>
-        </div>
+          <div class="footer-list">
+            <ul>
+              <li><a href="#about-page">about</a></li>
+              <li><a href="#words-page">words</a></li>
+              <li><a href="#work-page">work</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+          </div> <!-- .footer-list -->
+        </div> <!-- .flex-item-2 -->
+
         <div class="flex-item-3">
-          <ul>
-            <li><a target="_blank" href="https://www.instagram.com/degrootcanada/">instagram</a></li>
-            <li><a href="<?php echo get_option('home'); ?>/privacy-policy">privacy</a></li>
-            <li><a href="<?php echo get_option('home'); ?>/terms">terms</a></li>
-          </ul>
-        </div>
-      </div>
+          <div class="footer-list">
+            <ul>
+              <li><a target="_blank" href="https://open.spotify.com/user/v947bxvsytdi3v5510lhcqtqa">spotify</a></li>
+              <li><a target="_blank" href="https://www.instagram.com/degrootcanada/">instagram</a></li>
+              <li><a href="<?php echo get_option('home'); ?>/terms">terms</a></li>
+              <li><a href="<?php echo get_option('home'); ?>/privacy-policy">privacy</a></li>
+            </ul>
+          </div> <!-- .footer-list -->
+        </div> <!-- .flex-item-3 -->
+
+      </div> <!-- .flex-container -->
 
     </div> <!-- .footer-navigation -->
 

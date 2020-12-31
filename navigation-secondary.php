@@ -4,7 +4,7 @@
     <div class="navbar-inner">
       <div class="row">
 
-        <a href="#home-page">
+        <a href="<?php echo get_option('home'); ?>">
           <div class="col-xs-4">
             <h1>northbeach.media</h1>
           </div>
@@ -14,16 +14,16 @@
 
           <ul class="nav navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#about-page">about</a>
+              <a class="nav-link" href="<?php echo get_option('home'); ?>/#about-page">about</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#words-page">words</a>
+              <a class="nav-link" href="<?php echo get_option('home'); ?>/#words-page">words</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#work-page">work</a>
+              <a class="nav-link" href="<?php echo get_option('home'); ?>/#work-page">work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">contact</a>
+              <a class="nav-link" href="<?php echo get_option('home'); ?>/#contact">contact</a>
             </li>
           </ul>
 

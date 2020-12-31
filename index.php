@@ -61,11 +61,11 @@
 
       <?php endif; ?>
 
-    </div> <!-- grid -->
+    </div> <!-- .grid -->
 
     <?php next_posts_link( '<div class="button-see-more">See more</div>' ); ?>
 
-  </div> <!-- posts-page-top -->
+  </div> <!-- .posts-page-top -->
 
   <div class="posts-page-bottom">
   </div>
