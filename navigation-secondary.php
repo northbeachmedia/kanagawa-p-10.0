@@ -4,14 +4,15 @@
     <div class="navbar-inner">
       <div class="row">
 
-        <a href="<?php echo get_option('home'); ?>">
-          <div class="col-xs-4">
+        <div class="col-xs-4">
+
+          <a href="<?php echo get_option('home'); ?>">
             <h1>northbeach.media</h1>
-          </div>
-        </a>
+          </a>
+
+        </div> <!-- .col-xs-4 -->
 
         <div class="col-xs-8">
-
           <ul class="nav navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="<?php echo get_option('home'); ?>/#about-page">about</a>
@@ -30,7 +31,7 @@
           <div id="sidebarCollapse">
             <i class="fas fa-align-right"></i>
           </div>
-
+          
         </div> <!-- .col-xs-8 -->
 
       </div> <!-- .row -->

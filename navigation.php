@@ -4,11 +4,13 @@
     <div class="navbar-inner">
       <div class="row">
 
-        <a href="#home-page">
-          <div class="col-xs-4">
+        <div class="col-xs-4">
+
+          <a href="#home-page">
             <h1>northbeach.media</h1>
-          </div>
-        </a>
+          </a>
+
+        </div> <!-- .col-xs-4 -->
 
         <div class="col-xs-8">
 
