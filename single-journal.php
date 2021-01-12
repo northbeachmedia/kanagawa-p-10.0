@@ -44,6 +44,8 @@
 
                <?php get_template_part('social'); ?>
 
+               <?php get_template_part('author-bio'); ?>
+
                <div class="comment-section">
                  <h3>Leave a response</h3>
                  <?php comments_template(); ?>
