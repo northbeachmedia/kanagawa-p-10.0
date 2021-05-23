@@ -44,6 +44,17 @@ add_action( 'wp_enqueue_scripts', 'theme_js' );
 // thumbnails
 add_theme_support( 'post-thumbnails');
 
+/************* customizations ****************/
+
+// remove reading category single posts
+function remove_home_category( $query ) {
+    if ( $query->is_home() && $query->is_main_query() ) {
+        $query->set( 'cat', '-20' );
+    }
+}
+add_action( 'pre_get_posts', 'remove_home_category' );
+
+
 /************* clean up wordpress excess  ****************/
 
 function clean_up_excess() {

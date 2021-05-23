@@ -52,9 +52,6 @@
 
    <?php } //end is_single(); ?>
 
-   <!-- deprecated and replaced by related-posts template -->
-   <?php /* get_template_part('related-posts-insight'); */ ?>
-
   </div> <!-- single-page-top -->
 
   <div class="single-page-bottom">

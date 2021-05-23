@@ -9,9 +9,10 @@
       <?php
         // default arguments
         $args = array(
+          'cat' => '-20', // remove reading category single posts
+          'orderby' => 'rand',
           'posts_per_page' => 3,
           'post__not_in'   => array( get_the_ID() ), // exclude the current post
-          'orderby' => 'rand',
         );
 
         // query posts

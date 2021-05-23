@@ -36,7 +36,7 @@
             </a>
           </div>
 
-        <?php else : ?>
+        <?php elseif (in_category('insight')) :  ?>
 
           <div class="grid-item">
             <a href="<?php the_permalink(); ?>">
@@ -54,6 +54,8 @@
               </div>
             </a>
           </div>
+
+          <!-- else statement removed to hide reading category single posts -->
 
           <?php endif; ?>
 
