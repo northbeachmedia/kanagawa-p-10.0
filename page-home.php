@@ -63,7 +63,7 @@
         // default arguments
         $args = array(
           'posts_per_page' => 3,
-          'cat' => '-20', // remove reading category single posts
+          'cat' => '-27', // remove reading category single posts
         );
 
         // query posts

@@ -22,7 +22,7 @@
         // default arguments
         $args = array(
           'posts_per_page' => 6,
-          'cat' => '20', // remove reading category single posts
+          'cat' => '27', // only show reading category single posts
         );
 
         // query posts

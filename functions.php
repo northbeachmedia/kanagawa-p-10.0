@@ -49,7 +49,7 @@ add_theme_support( 'post-thumbnails');
 // remove reading category single posts
 function remove_home_category( $query ) {
     if ( $query->is_home() && $query->is_main_query() ) {
-        $query->set( 'cat', '-20' );
+        $query->set( 'cat', '-27' );
     }
 }
 add_action( 'pre_get_posts', 'remove_home_category' );
