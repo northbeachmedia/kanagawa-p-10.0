@@ -9,7 +9,7 @@
       <?php
         // default arguments
         $args = array(
-          'cat' => '-27', // remove reading category single posts
+          'category_name' => 'journal,insight',
           'orderby' => 'rand',
           'posts_per_page' => 3,
           'post__not_in'   => array( get_the_ID() ), // exclude the current post

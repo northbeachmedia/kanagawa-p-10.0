@@ -60,17 +60,20 @@
     <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
 
       <?php
-        // default arguments
-        $args = array(
-          'posts_per_page' => 3,
-          'cat' => '-27', // remove reading category single posts
-        );
+
+      // default arguments
+      $args = array(
+        'posts_per_page' => 3,
+        'category_name' => 'journal,insight'
+      );
 
         // query posts
         $wpex_query = new wp_query( $args );
 
         // loop through posts
-        foreach( $wpex_query->posts as $post ) : setup_postdata( $post ); ?>
+        foreach( $wpex_query->posts as $post ) : setup_postdata( $post );
+
+        ?>
 
       <?php if (in_category( 'journal' )) : ?>
 
