@@ -7,7 +7,7 @@
   <div class="home-page-top">
     <div class="row no-gutters">
       <div class="col-xs-12">
-        <h2>Making the Internet simple and beautiful one line of code at a time</h2>
+        <h2>Making performance marketing agile, scalable, and customer centric.</h2>
       </div>
     </div>
   </div>
@@ -25,7 +25,7 @@
     <div class="row no-gutters">
       <div class="col-xs-12">
         <h2>About me</h2>
-        <p>Hi! I'm Ben. I'm a technical & performance marketer, web developer, avid reader and snowboard enthusiast. I build metric-driven marketing strategies to scale and drive evidence-based revenue growth.</p>
+        <p>A Canadian based performance marketer, web developer and avid reader. I build metric-driven marketing strategies to scale and drive evidence-based revenue growth.</p>
         <p>I'm proudly working for Sonova helping promote innovative hearing care solutions.</p>
         <a data-target="#contactmodal" data-toggle="modal" href="contactmodal">
           <button>
@@ -52,7 +52,7 @@
 
       <div class="col-xs-12">
         <h2>Words and insights</h2>
-        <p>Writing is an essential step in collecting and analyzing strategies and ideas. I write on today's web design, product, business and marketing topics.</p>
+        <p>Writing is an essential step in collecting and analyzing strategies and ideas. I write on today's marketing, digital culture, and business topics.</p>
       </div>
 
     </div> <!-- row -->
@@ -141,7 +141,7 @@
     <div class="row">
 
       <div class="col-xs-12">
-        <h3>Are you looking for a great read on business, marketing and leadership? Take a moment and review my recommended books.</h3>
+        <h3>Are you looking for a great read on marketing, digital culture, and business? Take a moment and review my recommended books.</h3>
       </div> <!-- col-xs-12 -->
 
       <div class="col-xs-12">
@@ -167,7 +167,7 @@
     <div class="row">
       <div class="col-xs-12">
         <h2>A few of my projects</h2>
-        <p>I've worked on several websites and marketing initiatives in both my professional and personal time. I believe in creating digital assets with an emphasis on usability and responsiveness through a minimalistic design approach.</p>
+        <p>I've worked in multiple industries helping scale traffic, users, and revenue growth. I believe in creating digital strategies with an emphasis on customer centricity through a minimalistic approach.</p>
       </div>
     </div>
 

@@ -8,7 +8,7 @@
 
       <div class="footer-title">
         <h2>Let's get in touch</h2>
-        <p>Want to talk marketing? Or just have a coffee? I'm excited to chat with you.</p>
+        <p>Want to talk marketing, digital culture, and business? Send me a message.</p>
       </div>
 
       <?php
@@ -77,7 +77,7 @@
 
               <div class="contact-title">
                 <h2>Let's get in touch</h2>
-                <p>Want to talk marketing? Or just have a coffee? I'm excited to chat with you.</p>
+                <p>Want to talk marketing, digital culture, and business? Send me a message.</p>
               </div>
 
               <?php
