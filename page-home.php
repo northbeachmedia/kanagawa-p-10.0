@@ -25,7 +25,7 @@
     <div class="row no-gutters">
       <div class="col-xs-12">
         <h2>About me</h2>
-        <p>A Canadian based performance marketer, web developer and avid reader. I build metric-driven marketing strategies to scale and drive evidence-based revenue growth.</p>
+        <p>A Canadian 🇨🇦 based performance marketer, web developer and avid reader. I build metric-driven marketing strategies to scale and drive evidence-based revenue growth.</p>
         <p>I'm proudly working for Sonova helping promote innovative hearing care solutions.</p>
         <a data-target="#contactmodal" data-toggle="modal" href="contactmodal">
           <button>
