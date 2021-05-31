@@ -26,7 +26,7 @@
       <div class="col-xs-12">
         <h2>About me</h2>
         <p>A Canadian 🇨🇦 based performance marketer, web developer and avid reader.</p>
-        <p>I use agile marketing principles, and data-driven analysis to drive evidence-based revenue. I believe in using efficient and scalable processes to create growth.</p>
+        <p>I use agile marketing principles, and data-driven analysis to drive evidence-based revenue growth. I believe in creating scalable processes with a focus on customer-centricity.</p>
         <a data-target="#contactmodal" data-toggle="modal" href="contactmodal">
           <button>
             <div class="button-say-hello">say “hello”</div>
